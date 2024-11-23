@@ -1,0 +1,256 @@
+/* General Styles for Mobile Screens */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+header {
+    background-color: #fbd28c;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+}
+
+.navbar i {
+    margin: 0 8px;
+    cursor: pointer;
+}
+
+main {
+    padding: 80px 10px 20px; /* Adjusted for fixed header */
+}
+
+/* Profile Header */
+#profile-header {
+    width: 100%;
+    background-color: #fbd28c;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin-top: -10px; /* To remove white space between navbar and header */
+}
+
+.profile-picture-container img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+}
+
+#user-name {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.compliments-count {
+    font-size: 16px;
+    color: #555;
+}
+
+.profile-edit {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+}
+
+/* Compliments Section */
+#compliments-section {
+    margin-top: 20px;
+}
+
+.posts-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.post-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.profile-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.post-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.post-content h3 {
+    font-size: 16px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.post-content p {
+    font-size: 14px;
+    margin: 5px 0;
+    color: #555;
+}
+
+.post-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.like-icon {
+    font-size: 20px;
+    cursor: pointer;
+    color: gray;
+    transition: color 0.3s;
+}
+
+.like-icon.liked {
+    color: red;
+}
+
+/* Edit Profile Modal */
+.edit-profile-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.edit-profile-modal.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.edit-profile-content {
+    background-color: white;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    position: relative;
+}
+
+.edit-profile-content h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.edit-profile-content form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.edit-profile-content input,
+.edit-profile-content select {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.edit-profile-content input:focus,
+.edit-profile-content select:focus {
+    outline: none;
+    border-color: #fbd28c;
+    box-shadow: 0 0 5px rgba(251, 210, 140, 0.5);
+}
+
+.edit-profile-content .close-button {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #333;
+}
+
+.edit-profile-content button {
+    background-color: #fbd28c;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.edit-profile-content button:hover {
+    background-color: #f7c470;
+}
+
+/* Profile Picture Dropdown */
+#edit-profile-picture {
+    appearance: none; /* Remove default styles */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24'%3E%3Cpath fill='%23333' d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px;
+    font-size: 14px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #fbd28c;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+footer .social-icons i {
+    font-size: 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    color: #333;
+}

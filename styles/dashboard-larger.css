@@ -1,0 +1,251 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.navbar {
+    background-color: #f7d9a7;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: auto;
+    height: 70px;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-left img {
+    width: 50px;
+    height: 50px;
+}
+
+.navbar-left h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-left: 10px;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.profile-icon {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+/* Posts Container */
+#posts-container {
+    padding: 40px;
+}
+
+.post-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.post-card .profile-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.post-content {
+    flex: 1;
+    width: 100%;
+}
+
+.post-content h3 {
+    margin: 0;
+    font-size: 1.4rem;
+    color: #333;
+}
+
+.post-content .time {
+    font-size: 1rem;
+    color: #888;
+}
+
+.post-content p {
+    font-size: 1.1rem;
+    color: #444;
+    margin-top: 10px;
+}
+
+.post-content .post-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.post-actions .like-icon {
+    font-size: 1.2rem;
+    color: #e74c3c;
+    cursor: pointer;
+}
+
+/* Add Button */
+.add-button {
+    position: fixed;
+    bottom: 75px;
+    right: 30px;
+    width: 65px;
+    height: 65px;
+    background-color: #f39c12;
+    color: #fff;
+    font-size: 28px;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.add-button:hover {
+    background-color: #e67e22;
+}
+
+/* New Compliment Window */
+.new-compliment-window {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    width: 500px;
+    display: none;
+    z-index: 2000;
+}
+
+.new-compliment-window h2 {
+    margin-top: 0;
+    font-size: 1.8rem;
+    color: #333;
+    text-align: center;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 15px;
+}
+
+.new-compliment-window form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.new-compliment-window input[type="text"],
+.new-compliment-window textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.new-compliment-window textarea {
+    height: 150px;
+    resize: none;
+}
+
+.new-compliment-window .post-button {
+    background-color: #f39c12;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    cursor: pointer;
+}
+
+.new-compliment-window .post-button:hover {
+    background-color: #e67e22;
+}
+
+.close-button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    color: #333;
+    cursor: pointer;
+}
+
+/* Footer */
+.footer {
+    background-color: #f7d9a7;
+    text-align: center;
+    padding: 15px 0;
+    position: sticky;
+    bottom: 0;
+    width: auto;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 1rem;
+    color: #333;
+}
+
+.footer .social-icons {
+    margin-top: 10px;
+}
+
+.footer .social-icons a {
+    margin: 0 12px;
+    font-size: 1.5rem;
+    color: #333;
+    text-decoration: none;
+}
+
+.footer .social-icons a:hover {
+    color: #f39c12;
+}
+
+.suggestion-item {
+    padding: 8px;
+    cursor: pointer;
+    background-color: white;
+}
+
+.suggestion-item:hover, .suggestion-item.highlight {
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+
+.like-icon {
+    transition: color 0.3s ease;
+}
+
+.like-icon:hover {
+    color: red;
+}

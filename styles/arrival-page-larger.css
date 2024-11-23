@@ -1,0 +1,141 @@
+/* General Body Styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+header, footer {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    left: 0;
+    z-index: 2;
+}
+
+header {
+    top: 0;
+}
+
+footer {
+    bottom: 0;
+    flex-direction: column;
+}
+
+.logo img, .profile-icon img {
+    width: 40px;
+    height: 40px;
+}
+
+h1 {
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
+/* Fullscreen GIF Background */
+body::before {
+    content: "";
+    background: url('https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExemp1c3lkNzRodzA1c3F3cDZkZ3gxanM1c2FrcDNibXlqdWwwNHo3byZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/9PwVewJCngy91a7ZDs/giphy.webp') no-repeat center center fixed;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* Centering the buttons with modified style */
+.buttons-container {
+    position: fixed;
+    bottom: 120px; /* Just above the footer */
+    left: 1px; /* Minor offset to help center */
+    width: 100%;
+    gap: 900px;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+
+.open-up-button {
+    padding: 8px 15px;
+    font-size: 14px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #66CDAA; /* Fill with green color */
+    color: #000; /* Black text */
+    margin-right: 10px;
+}
+
+.learn-more-button {
+    padding: 8px 15px;
+    font-size: 14px;
+    border: 2px solid #000; /* Black border */
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #f5deb3; /* Light beige/tan background */
+    color: #000; /* Black text */
+}
+
+/* Footer */
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 5px;
+}
+
+.social-icons a {
+    font-size: 24px;
+    color: #333;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #007bff;
+}
+
+/* Profile icon styling */
+.profile-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%; /* Circular shape */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.profile-link:hover {
+    transform: scale(1.1); /* Slightly enlarges the icon on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+}
+
+.profile-icon img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* Ensures the icon is circular */
+}

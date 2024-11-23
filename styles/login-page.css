@@ -1,0 +1,166 @@
+/* General Body Styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-y: auto; /* Enable vertical scrolling */
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+    -ms-overflow-style: none; /* Hide scrollbar for IE/Edge */
+}
+
+body::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome, Safari, and Edge */
+}
+
+/* Navbar Styling */
+header {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 20px;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+/* Form Container Styling */
+.form-container {
+    margin-top: 100px; /* Push below navbar */
+    margin-bottom: 60px; /* Avoid overlap with footer */
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+    text-align: left;
+}
+
+/* Form Tabs Styling */
+.form-tabs {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-tabs span {
+    cursor: pointer;
+    font-weight: bold;
+    color: #333;
+    padding: 5px;
+    border-bottom: 2px solid transparent;
+}
+
+.form-tabs .active {
+    color: #f5deb3;
+    border-bottom: 2px solid #f5deb3;
+}
+
+/* Form Fields and Button */
+label {
+    font-weight: bold;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #f5deb3;
+    color: #333;
+}
+
+/* Profile Picture Selection Styling */
+#profile-preview {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#profile-preview-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #ddd;
+    display: block;
+    margin: 0 auto 10px auto;
+}
+
+/* Footer Styling */
+footer {
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(255, 222, 179, 0.9);
+    text-align: center;
+    font-size: 12px;
+    color: #333;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-icons a {
+    font-size: 20px;
+    color: #333;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #007bff;
+}
+
+.logo img {
+    cursor: pointer; /* Changes the mouse to a pointer (hand) when hovering over the logo */
+}
+
+h1.logo-text {
+    cursor: pointer; /* Changes the mouse to a pointer (hand) when hovering over the text */
+}
