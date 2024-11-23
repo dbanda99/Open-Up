@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const githubMembersApiUrl = "https://api.github.com/repos/dbanda99/open-up-data/contents/members.json";
     const githubComplimentsApiUrl = "https://api.github.com/repos/dbanda99/open-up-data/contents/compliment-posts.json";
-    const githubToken = "Bearer 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";
+    const githubToken = "Bearer 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";
 
     // Toggle the visibility of the Edit Profile Window
     const toggleEditProfile = () => {
