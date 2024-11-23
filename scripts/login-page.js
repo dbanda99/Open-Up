@@ -1,5 +1,5 @@
 // GitHub API configuration
-const GITHUB_TOKEN = "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";
+const GITHUB_TOKEN = "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";
 const REPO_OWNER = "dbanda99";
 const REPO_NAME = "open-up-data";
 const FILE_PATH = "members.json";
