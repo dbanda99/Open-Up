@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const githubApiUrl = "https://api.github.com/repos/dbanda99/open-up-data/contents/compliment-posts.json";
     const membersApiUrl = "https://api.github.com/repos/dbanda99/open-up-data/contents/members.json";
-    const githubToken = "Bearer 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";
+    const githubToken = "Bearer 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";
 
     // Display logged-in user profile in the navbar
     const displayUserProfile = async () => {
