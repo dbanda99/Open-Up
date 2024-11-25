@@ -1,4 +1,4 @@
-const GITHUB_TOKEN = "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";
+const GITHUB_TOKEN = "{{ secrets.REPO_TOKEN }}";
 const REPO_OWNER = "dbanda99";
 const REPO_NAME = "open-up-data";
 const FILE_PATH = "members.json";
