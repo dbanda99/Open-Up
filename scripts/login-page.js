@@ -1,5 +1,5 @@
 // GitHub API configuration
-const GITHUB_TOKEN = "{{ secrets.REPO_TOKEN }}";
+const GITHUB_TOKEN = "${{ secrets.REPO_TOKEN }}";
 const REPO_OWNER = "dbanda99";
 const REPO_NAME = "open-up-data";
 const FILE_PATH = "members.json";
