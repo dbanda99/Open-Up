@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const githubMembersApiUrl = "https://api.github.com/repos/dbanda99/open-up-data/contents/members.json";
     const githubComplimentsApiUrl = "https://api.github.com/repos/dbanda99/open-up-data/contents/compliment-posts.json";
-    const githubToken = "Bearer {{ secrets.REPO_TOKEN }}";
+    const githubToken = "Bearer ${{ secrets.REPO_TOKEN }}";
 
     // Toggle the visibility of the Edit Profile Window
     const toggleEditProfile = () => {
