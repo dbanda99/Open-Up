@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open-Up Dashboard</title>
+    <link rel="stylesheet" href="styles/dashboard.css">
+    <link rel="stylesheet" href="styles/dashboard-larger.css" media="(min-width: 768px)">
+    <!-- Add Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="navbar-left">
+            <img src="images/Open-Up_logo.png" alt="Open-Up Logo">
+            <h1>OPEN-UP</h1>
+        </div>
+        <div class="navbar-right">
+            <span id="user-name"></span>
+            <img id="user-profile-icon" class="profile-icon" src="images/default-profile-img.png" alt="Profile Icon">
+        </div>
+    </div>
+
+    <!-- Posts Container -->
+    <div id="posts-container"></div>
+
+    <!-- Add Button -->
+    <button class="add-button" id="add-button">+</button>
+
+    <!-- New Compliment Window -->
+    <div class="new-compliment-window" id="new-compliment-window">
+        <button class="close-button" id="close-button">&times;</button>
+        <h2>New Compliment</h2>
+        <form id="compliment-form">
+            <label for="recipient-name">To Who:</label>
+            <input type="text" id="recipient-name" placeholder="Enter recipient's name">
+            <!-- Suggestion Box -->
+            <div id="suggestion-box" class="suggestion-box"></div>
+            
+            <label for="message">Your Message:</label>
+            <textarea id="message" placeholder="Type your message..."></textarea>
+            <!-- Character Count -->
+            <p id="char-count">0/2,500 characters</p>
+            <button type="button" class="post-button" id="post-button">Post</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>© Dummynation 2024 | All Rights Reserved.</p>
+        <div class="social-icons">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-youtube"></i></a>
+            <a href="#"><i class="bi bi-twitter"></i></a>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="scripts/dashboard.js"></script>
+</body>
+</html>

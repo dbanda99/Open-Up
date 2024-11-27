@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles/login-page.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/Open-Up_logo.png" alt="Open-Up Logo">
+        </div>
+        <h1 class="logo-text">OPEN-UP</h1>
+    </header>
+
+    <main>
+        <div class="form-container">
+            <!-- Login/Register Links -->
+            <div class="form-tabs">
+                <span id="login-tab" class="active">LOGIN</span> |
+                <span id="register-tab">REGISTER</span>
+            </div>
+
+            <!-- Login Form -->
+            <div id="login-form">
+                <label for="login-email">E-mail:</label>
+                <input type="email" id="login-email" placeholder="Enter your email" required>
+                <label for="login-password">Password:</label>
+                <input type="password" id="login-password" placeholder="Enter your password" required>
+                <button id="login-button">LOGIN</button>
+            </div>
+
+            <!-- Register Form -->
+            <div id="register-form" style="display: none;">
+                <label for="register-name">Name:</label>
+                <input type="text" id="register-name" placeholder="Enter your name" required>
+
+                <label for="register-email">E-mail:</label>
+                <input type="email" id="register-email" placeholder="Enter your email" required>
+
+                <label for="register-confirm-email">Confirm Email:</label>
+                <input type="email" id="register-confirm-email" placeholder="Confirm your email" required>
+
+                <label for="register-password">Password:</label>
+                <input type="password" id="register-password" placeholder="Enter your password" required>
+
+                <label for="register-confirm-password">Confirm Password:</label>
+                <input type="password" id="register-confirm-password" placeholder="Confirm your password" required>
+
+                <label for="profile-picture">Select Profile Picture:</label>
+                <div class="profile-preview">
+                    <img id="profile-picture-preview" src="" alt="Profile Preview" style="display: none; width: 100px; height: 100px;" />
+                </div>
+                <select id="profile-picture">
+                    <option value="images/img-01.png" selected>Dog</option>
+                    <option value="images/img-02.png">Cat</option>
+                    <option value="images/img-03.png">Bunny</option>
+                    <option value="images/img-04.png">Monkey</option>
+                    <option value="images/img-05.png">F. Dog</option>
+                </select>
+
+                <button id="register-button">REGISTER</button>
+            </div>
+
+
+        </div>
+    </main>
+
+    <footer>
+        <p>(C) Dummynation 2024 | All Rights Reserved.</p>
+        <div class="social-icons">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-youtube"></i></a>
+            <a href="#"><i class="bi bi-twitter"></i></a>
+        </div>
+    </footer>
+
+    <script src="scripts/login-page.js" defer></script>
+</body>
+
+</html>

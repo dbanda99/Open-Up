@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="styles/user-profile.css">
+    <link rel="stylesheet" href="styles/user-profile-larger.css" media="(min-width: 768px)">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <a href="dashboard.html" class="home-icon">
+                <i class="bi bi-house"></i>
+            </a>
+            <a href="#" id="logout-button" class="logout-icon" title="Logout">
+                <i class="bi bi-box-arrow-right"></i>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section id="profile-header">
+            <div class="profile-background">
+                <div id="edit-profile-button" class="profile-edit">
+                    <i class="bi bi-pencil-square" title="Edit Profile"></i>
+                </div>
+                <div class="profile-picture-container">
+                    <img id="profile-picture" src="images/default-profile-img.png" alt="Profile Picture">
+                </div>
+                <h2 id="user-name">User's Name</h2>
+                <p class="compliments-count">Compliments - <span id="compliments-count">0</span></p>
+            </div>
+        </section>
+
+        <section id="compliments-section">
+            <div id="posts-container" class="posts-container">
+                <!-- Compliments will be dynamically loaded here -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Edit Profile Modal -->
+    <div class="edit-profile-modal">
+        <div class="edit-profile-content">
+            <h2>Modify Profile</h2>
+            <form id="edit-profile-form">
+                <label for="edit-username">User Name:</label>
+                <input type="text" id="edit-username" placeholder="Enter new name">
+
+                <label for="edit-email">E-mail:</label>
+                <input type="email" id="edit-email" placeholder="Enter new email">
+
+                <label for="edit-profile-picture">Profile Picture:</label>
+                <select id="edit-profile-picture">
+                    <option value="images/img-01.png" selected>Dog</option>
+                    <option value="images/img-02.png">Cat</option>
+                    <option value="images/img-03.png">Bunny</option>
+                    <option value="images/img-04.png">Monkey</option>
+                    <option value="images/img-05.png">F. Dog</option>
+                </select>
+
+                <label for="edit-password">Password:</label>
+                <input type="password" id="edit-password" placeholder="Enter new password">
+
+                <button type="submit">Confirm</button>
+            </form>
+            <i id="close-edit-profile" class="bi bi-x close-button"></i>
+        </div>
+    </div>
+
+    <footer>
+        <p>© Dummynation 2024 | All Rights Reserved.</p>
+        <div class="social-icons">
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-youtube"></i>
+            <i class="bi bi-twitter"></i>
+        </div>
+    </footer>
+
+    <script src="scripts/user-profile.js"></script>
+</body>
+</html>

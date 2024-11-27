@@ -1,0 +1,162 @@
+/* General Styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-y: auto; /* Enable vertical scrolling */
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+    -ms-overflow-style: none; /* Hide scrollbar for IE/Edge */
+}
+
+body::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome, Safari, and Edge */
+}
+
+header {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+footer {
+    width: 100%;
+    background-color: #f5deb3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+}
+
+/* Form Container Styling */
+main {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.form-container {
+    width: 400px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden; /* Prevent internal scrollbars */
+}
+
+/* Tabs Styling */
+.tab-switch {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.tab-switch span {
+    cursor: pointer;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.tab-switch .active {
+    color: #f5deb3;
+}
+
+/* Form Styling */
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align labels to the left */
+}
+
+.form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+    width: 100%;
+    text-align: left;
+}
+
+.form input,
+.form select {
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+    border: 2px solid #f5deb3;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.submit-button {
+    padding: 12px;
+    width: 100%;
+    border: none;
+    background-color: #f5deb3;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Profile Picture Selection Styling */
+#profile-preview {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#profile-preview-img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #ddd;
+    display: block;
+    margin: 0 auto 10px auto;
+}
+
+/* Footer Styling */
+footer p {
+    font-size: 14px;
+    color: #333;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 5px;
+}
+
+.social-icons a {
+    font-size: 24px;
+    color: #333;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #007bff;
+}
