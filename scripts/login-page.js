@@ -2,7 +2,7 @@
 const REPO_OWNER = "dbanda99";
 const REPO_NAME = "open-up-data";
 const FILE_PATH = "members.json";
-const API_KEY = "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";
+const API_KEY = $${{ secrets.API_KEY }};
 
 // Initialize the page and attach event listeners
 document.addEventListener("DOMContentLoaded", function () {
